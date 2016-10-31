@@ -1,6 +1,6 @@
 <div class="content_container main_container">
     <h4 class="promo_main_header">Newsletter</h3>
-    <form action="http://petersoncompanies.createsend.com/t/d/s/ftkuj/" method="post" id="newsletter_form">
+    <form action="http://mobilefringe.createsend.com/t/d/s/bitjtj/" method="post" id="newsletter_form">
         <div class="row">
             <div class="col-md-12">
                 <img src="http://placehold.it/940x500" class="padding_20" />
@@ -18,7 +18,7 @@
                 
                     <div class="col-md-6 text-left">
                         <label class="text-left" for="fieldEmail">Email</label>
-                        <input id="fieldEmail" name="cm-ftkuj-ftkuj" type="email" required class="form-control">
+                        <input id="fieldEmail" name="cm-bitjtj-bitjtj" type="email" required class="form-control">
                     </div>
                 </div>
                 <div class="row">
