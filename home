@@ -24,11 +24,10 @@
     <div class="flexslider">
     <ul class="slides" id="home_banner">
         <script id="banner_template" type="x-tmpl-mustache/text">
-            <li>
-                <div style="background-image:url(//codecloud.cdn.speedyrails.net/sites/580f9dab6e6f643917000000/image/jpeg/1478198391000/FairfaxCorner_HomePageBanner.jpg)" class="banner_image_div">
-                    <a class="banner_image_li" href="{{url}}" {{css}} onclick="{{noLink}}" >
-                    </a>
-                </div>
+            <li class="item">
+                <a class="banner_image_li" href="{{url}}" {{css}} onclick="{{noLink}}" >
+                    <img src="{{image_url}}"  class="{{gif_class}}"/>
+                </a>
             </li>
         </script>
     </ul>
