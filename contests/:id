@@ -2,7 +2,7 @@
 <div class="content_container main_container">
     <h4 class="promo_main_header">Contest</h3>
     <div class="row padding_20">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div id="contest_container">
                 <script id="contest_template" type="x-tmpl-mustache/text">
                     <img alt="contest image" class="details_image" src="{{alt_photo_url}}" />
@@ -49,10 +49,7 @@
             </div>
             
         </div>
-        <div class="col-md-4 hidden_phone">
-           <img style="margin-bottom:20px;" src="//codecloud.cdn.speedyrails.net/sites/580f9dab6e6f643917000000/image/png/1477422402000/box.png" class="" alt="">
-           <img style="" src="//codecloud.cdn.speedyrails.net/sites/580f9dab6e6f643917000000/image/jpeg/1477421592000/aboutbox.jpg" class="" alt="">
-        </div> 
+        
     </div>
 </div>
 <script>
