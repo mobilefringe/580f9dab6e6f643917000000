@@ -49,16 +49,15 @@
             <div class="feature_item_container">
                 <p class="feature_title">{{name}}</p>
             <div>
-                <div class="feature_item wow animated flipInX animated">
-                    <a href="{{url}}">
-                        <figure style="background-image:url('{{image_url}}')">
-                            <figcaption>
-                                <div class="view_button">View</div>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-            
+            <div class="feature_item wow animated flipInX animated">
+                <a href="{{url}}">
+                    <figure style="background-image:url('{{image_url}}')">
+                        <figcaption>
+                            <div class="view_button">View</div>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
         </script>
     </div>
     <!--<div class="promotions">-->
