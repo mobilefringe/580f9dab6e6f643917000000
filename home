@@ -87,6 +87,7 @@
         margin-top:-5px;
     }
 </style>
+<script src="//s3.amazonaws.com/kodekloud/sites/580f9dab6e6f643917000000/text/javascript/1473240140000/jquery.flexslider-min.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
