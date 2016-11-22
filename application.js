@@ -40,9 +40,34 @@ function renderMobileBanner(mobile_banner_template, mobile_banner, images){
     var item_rendered = [];
     var template_html = $(mobile_banner_template).html();
     $.each(images, function(key, val) {
-        var rendered = Mustache.render(template_html, val);
-        item_rendered.push(rendered);
-    });
+        today = new Date();
+        start = new Date (val.start_date);
+       
+        start.setDate(start.getDate());
+        if(val.url == "" || val.url === null){
+           val.css = "style=cursor:default;";
+           val.noLink = "return false";
+        }
+        if (start <= today){
+            if (val.end_date){
+                end = new Date (val.end_date);
+                end.setDate(end.getDate() + 1);
+                if (end >= today){
+                    item_list.push(val);  
+                }
+            } else {
+                item_list.push(val);
+            }
+        }
+    });    
+    $.each(item_list , function(key, val) {
+        var repo_rendered = Mustache.render(banner_template_html,val);
+        item_rendered.push(repo_rendered);
+    });    
+        
+    //     var rendered = Mustache.render(template_html, val);
+    //     item_rendered.push(rendered);
+    // });
     $(mobile_banner).html(item_rendered.join(''));
 }
 
