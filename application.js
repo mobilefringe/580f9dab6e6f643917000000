@@ -46,8 +46,7 @@ function renderMobileBanner(mobile_banner_template, mobile_banner, images){
     if(images.length <= 1) {
         console.log("Hello")
         $('.flexslider_mobile').flexslider({
-            animation: "none",
-            minItems: 1,
+            touch: false,
         });
     }
     $(mobile_banner).html(item_rendered.join(''));
