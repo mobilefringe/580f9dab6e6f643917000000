@@ -43,6 +43,9 @@ function renderMobileBanner(mobile_banner_template, mobile_banner, images){
         var rendered = Mustache.render(template_html, val);
         item_rendered.push(rendered);
     });
+    if(val.images =< 1) {
+        console.log("Hello")
+    }
     $(mobile_banner).html(item_rendered.join(''));
 }
 
