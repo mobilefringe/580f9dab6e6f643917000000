@@ -44,10 +44,7 @@ function renderMobileBanner(mobile_banner_template, mobile_banner, images){
         item_rendered.push(rendered);
     });
     if(images.length <= 1) {
-        console.log("Hello")
-        $('.flexslider_mobile').flexslider({
-            touch: false,
-        });
+        console.log("Hello");
     }
     $(mobile_banner).html(item_rendered.join(''));
 }
