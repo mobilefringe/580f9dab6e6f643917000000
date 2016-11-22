@@ -345,13 +345,13 @@ body{
     background: #000;
     color: #fff;
     padding: 15px 0;
-    bottom:-20px;
+    bottom:-50px;
     transition: bottom 0.3s;
 }
 
 .feature_item figcaption:hover .view_button{
     transition: bottom 0.3s;
-    bottom: 30px;
+    bottom: 0;
 }
 
 .heading{
