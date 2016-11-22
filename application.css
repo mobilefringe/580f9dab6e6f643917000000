@@ -1278,13 +1278,22 @@ body{
         }
     }
     
-    .feature_item {
+    .feature_item_container {
         padding-left: 10px;
         padding-right: 10px;
         float: left;
         width: 33.33333333%;
         max-height:300px;
-        overflow:hidden;
+        overflow:hidden;    
+    }
+    .feature_item {
+        // padding-left: 10px;
+        // padding-right: 10px;
+        // float: left;
+        // width: 33.33333333%;
+        // max-height:300px;
+        // overflow:hidden;
+        width: 100%;
     }
     
     .promotion_item {
