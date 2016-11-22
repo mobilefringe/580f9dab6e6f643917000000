@@ -45,6 +45,9 @@ function renderMobileBanner(mobile_banner_template, mobile_banner, images){
     });
     if(images.length <= 1) {
         console.log("Hello")
+        $('.flexslider').flexslider({
+            animation: "none",
+        });
     }
     $(mobile_banner).html(item_rendered.join(''));
 }
