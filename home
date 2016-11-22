@@ -117,7 +117,7 @@
             });
             $('.flexslider_mobile').flexslider({
                 animation: "slide",
-                allowOneSlide: false
+                allowOneSlide: false,
             });
             renderSitePopup();
         }
