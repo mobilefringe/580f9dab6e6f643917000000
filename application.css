@@ -1286,6 +1286,14 @@ body{
         max-height:300px;
         overflow:hidden;    
     }
+    
+    .feature_title {
+        font-weight: bold;
+        color: #5f574b;
+        letter-spacing: 0.29px;
+        text-align: center;
+        font-size: 16px;
+    }
     .feature_item {
         // padding-left: 10px;
         // padding-right: 10px;
