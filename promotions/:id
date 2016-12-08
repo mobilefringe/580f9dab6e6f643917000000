@@ -12,7 +12,9 @@
                 <div class="details_desc">{{{rich_description}}}</div>
             </div>
             <div class="col-md-4 hidden_phone">
-                <img src="{{store_image}}" style="{{image_show}}" alt="Store Logo" class="details_image" />
+                <div class="side_image">
+                    <img src="{{store_image}}" style="{{image_show}}" alt="Store Logo" class="details_image" />
+                </div>
                 <div class="side_stores" style="{{show_box}}">
                     <a class="hover_underline" style="{{store_show}}" href="/stores/{{store_slug}}">View Store Info</a>
                     <br />
