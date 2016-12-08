@@ -8,7 +8,7 @@
                 <img src="{{image_url}}" style="{{promo_image_show}}" alt="Store Logo" class="details_image" />
                 <h2 class="promo_list_name">{{name}}</h2>
               
-                <p class="show_phone"><span class="promo_store">View Store Details</span><a href="/stores/{{store_slug}}" style="{{store_show}}" class="read_more">View Store Info</a></p>
+                <p class="show_phone"><a href="/stores/{{store_slug}}" style="{{store_show}}" class="read_more">View Store Info</a></p>
                 <div class="details_desc">{{{rich_description}}}</div>
             </div>
             <div class="col-md-4 hidden_phone">
