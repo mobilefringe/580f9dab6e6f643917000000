@@ -43,9 +43,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="side_image">
-                        <img src="{{alt_store_front_url}}" class="store_logo hidden_phone" alt="{{name}}" />
-                    </div>
+                    <img src="{{alt_store_front_url}}" class="store_logo hidden_phone" alt="{{name}}" />
                     <div class="side_stores">
                         <a href="tel:{{phone}}" style="{{phone_show}}">{{phone}}</a>
                         <br style="{{phone_show}}" />
