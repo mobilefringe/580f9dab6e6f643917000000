@@ -229,7 +229,6 @@ function renderPromoDetails(container, template, collection){
     Mustache.parse(template_html); 
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
-        
         if (val.promotionable_type == "Store") {
             var store_details = getStoreDetailsByID(val.promotionable_id);
             val.store_detail_btn = store_details.slug ;
@@ -239,20 +238,18 @@ function renderPromoDetails(container, template, collection){
             if (store_details.website != null && store_details.website.length > 0){
                 val.show = "display:inline";
                 val.website = store_details.website
-            }
-            else{
+            } else {
                 val.show = "display:none";
             }
+            
             if (store_details.phone != null && store_details.phone.length > 0){
                 val.phone_show = "display:inline";
                 val.phone = store_details.phone
-            }
-            else{
+            } else {
                 val.phone_show = "display:none";
                 val.show = "display:none";
             }
-        }
-        else{
+        } else {
             val.store_name = site_json.mall_name;
             val.store_image = site_json.default_image;
             val.image_show = "display:none";
@@ -275,11 +272,9 @@ function renderPromoDetails(container, template, collection){
         var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
-    
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM DD")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM DD") + " - " + end.format("MMM DD")
         }
         
@@ -305,20 +300,18 @@ function renderEventDetails(container, template, collection){
             if (store_details.website != null && store_details.website.length > 0){
                 val.show = "display:inline";
                 val.website = store_details.website
-            }
-            else{
+            } else {
                 val.show = "display:none";
             }
+            
             if (store_details.phone != null && store_details.phone.length > 0){
                 val.phone_show = "display:inline";
                 val.phone = store_details.phone
-            }
-            else{
+            } else {
                 val.phone_show = "display:none";
                 val.show = "display:none";
             }
-        }
-        else{
+        } else {
             val.store_name = site_json.mall_name;
             val.store_image = site_json.default_image;
             val.store_show = "display:none";
@@ -344,8 +337,7 @@ function renderEventDetails(container, template, collection){
     
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM DD")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM DD") + " - " + end.format("MMM DD")
         }
         var rendered = Mustache.render(template_html,val);
@@ -363,14 +355,13 @@ function renderJobs(container, template, collection){
         if(val.jobable_type == "Store"){
             val.store_name = getStoreDetailsByID(val.jobable_id).name;
             val.store_slug = getStoreDetailsByID(val.jobable_id).slug;
-        }
-        else{
+        } else {
             val.store_name = site_json.mall_name;
         }
+        
         if(val.description.length > 200){
             val.description_short = val.description.substring(0,200) + "...";
-        }
-        else{
+        } else {
             val.description_short = val.description;
         }
         
@@ -401,21 +392,18 @@ function renderStoreDetails(container, template, collection){
         
         if (val.website != null && val.website.length > 0){
             val.show = "display:inline-block";
-        }
-        else{
+        } else {
             val.show = "display:none";
         }
         if (val.phone != null && val.phone.length > 0){
             val.phone_show = "display:inline-block";
-        }
-        else{
+        } else {
             val.phone_show = "display:none";
         }
         
         if (val.twitter != null && val.twitter.length > 0){
             val.twitter_show = "display:inline-block";
-        }
-        else{
+        } else {
             val.twitter_show = "display:none";
         }
         
@@ -454,20 +442,17 @@ function renderJobDetails(container, template, collection){
             if (store_details.website != null && store_details.website.length > 0){
                 val.show = "display:inline";
                 val.website = store_details.website
-            }
-            else{
+            } else {
                 val.show = "display:none";
             }
             if (store_details.phone != null && store_details.phone.length > 0){
                 val.phone_show = "display:inline";
                 val.phone = store_details.phone
-            }
-            else{
+            } else {
                 val.phone_show = "display:none";
                 val.show = "display:none";
             }
-        }
-        else{
+        } else {
             val.store_name = site_json.mall_name;
             val.store_image = site_json.default_image;
             val.store_show = "display:none";
@@ -476,16 +461,15 @@ function renderJobDetails(container, template, collection){
             val.show_box= "display:none"
             val.image_show = "display:none";
         }
+        
         if(val.description.length > 200){
             val.description_short = val.description.substring(0, 200) + "..."
-        }
-        else{
+        } else {
             val.description_short = val.description
         }
         
         var show_date = moment(val.show_on_web_date).tz(getPropertyTimeZone());
         val.published_on = show_date.format("MMM")+ " " + show_date.format("DD")
-        
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
@@ -506,5 +490,3 @@ function renderContest(container, template, collection){
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
-
-
