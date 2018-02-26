@@ -89,6 +89,7 @@
 
 @media(max-width:768px){
     #map {
+        margin: 0 15%;
         width: auto;
         max-width: 100%;
     }
